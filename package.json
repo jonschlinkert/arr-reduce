@@ -1,7 +1,7 @@
 {
   "name": "arr-reduce",
   "description": "Fast array reduce that also loops over sparse elements.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "homepage": "https://github.com/jonschlinkert/arr-reduce",
   "author": {
     "name": "Jon Schlinkert",
@@ -25,12 +25,15 @@
   "scripts": {
     "test": "mocha -R spec"
   },
+  "dependencies": {
+    "is-number": "^1.1.0"
+  },
   "devDependencies": {
     "mocha": "*",
     "should": "^4.6.1"
   },
-  "keywords": [],
-  "dependencies": {
-    "is-number": "^1.1.0"
-  }
+  "keywords": [
+    "array",
+    "reduce"
+  ]
 }
