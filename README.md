@@ -10,6 +10,17 @@ npm i arr-reduce --save
 
 ## Usage
 
+**Callback params**
+
+The callback is executed on every element in the supplied array:
+
+ - `prev`: this is the "accumulator". This value is either the result of the last callback invocation, or the initial value if specified.
+ - `curr`: the current array element being looped over
+ - `i`: the index of the current element
+ - `arr`: the array that is being looped over.
+
+**Examples**
+
 ```js
 var reduce = require('arr-reduce');
 
