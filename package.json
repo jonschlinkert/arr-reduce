@@ -1,7 +1,7 @@
 {
   "name": "arr-reduce",
   "description": "Fast array reduce that also loops over sparse elements.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/jonschlinkert/arr-reduce",
   "author": {
     "name": "Jon Schlinkert",
@@ -16,21 +16,21 @@
   },
   "license": {
     "type": "MIT",
-    "url": "https://github.com/jonschlinkert/arr-reduce/blob/master/LICENSE-MIT"
+    "url": "https://github.com/jonschlinkert/arr-reduce/blob/master/LICENSE"
   },
+  "files": [
+    "index.js"
+  ],
   "main": "index.js",
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha -R spec"
-  },
-  "dependencies": {
-    "is-number": "^1.1.0"
+    "test": "mocha"
   },
   "devDependencies": {
     "mocha": "*",
-    "should": "^4.6.1"
+    "should": "^5.2.0"
   },
   "keywords": [
     "array",

@@ -1,18 +1,14 @@
 /*!
  * arr-reduce <https://github.com/jonschlinkert/arr-reduce>
  *
- * Copyright (c) 2015 Jon Schlinkert, contributors.
- * Licensed under the MIT license.
+ * Copyright (c) 2015, Jon Schlinkert.
+ * Licensed under the MIT License.
  */
 
 'use strict';
 
-var isNumber = require('is-number');
-
-module.exports = reduce;
-
-function reduce(arr, cb, initial) {
-  // idea for args length from github.com/mout/mout
+module.exports = function reduce(arr, cb, initial) {
+  // idea for args length to ensure initial value from github.com/mout/mout
   var init = arguments.length > 2;
   if (arr == null) {
     if (init) {
@@ -22,10 +18,7 @@ function reduce(arr, cb, initial) {
     }
   }
 
-  var len = arr.length;
-  var res = initial;
-  var i = 0;
-
+  var len = arr.length, res = initial;
   if (!arr.length) return initial;
 
   for (var i = 0; i < len; i++) {
@@ -36,6 +29,5 @@ function reduce(arr, cb, initial) {
       res = cb(res, arr[i], i, arr);
     }
   }
-
   return res;
-}
+};
